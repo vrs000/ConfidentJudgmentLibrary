@@ -1,0 +1,12 @@
+#ifndef CONFJUDGLIB_GLOBAL_H
+#define CONFJUDGLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CONFJUDGLIB_LIBRARY)
+#  define CONFJUDGLIB_EXPORT Q_DECL_EXPORT
+#else
+#  define CONFJUDGLIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CONFJUDGLIB_GLOBAL_H
