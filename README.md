@@ -117,7 +117,7 @@ sol.start() может принимать 2 параметра:
 
 `void start(int ThreadCount = -1, int MaxThreadCount = QThread::idealThreadCount());`
     
-По завершению расчётов имеется возможность получить данные полученные в процессе
+По завершению расчётов имеется возможность извлечь данные полученные в процессе
 ~~~
     //Рейтинги HR+SR
     QList<double>& GetHardRating();
