@@ -50,27 +50,18 @@ int main(int argc, char *argv[])
     };
     ImportanceGroups groups(list);
 
-    //    sol.SetIndicatorImportanceGroups(groups);
+    
     sol.SetStep(h);
     sol.SetIndicatorTrends(trends);
 
-//    sol.SetParetoCriterionEnabled(true);
 
     sol.start();
     sol.join();
 
-    sol.SaveAsJson();
-//    sol.SaveAsJson();
-    //    qDebug() << "Time elapsed:" << sol.GetParsedElapsedTime();
-    //    qDebug() <<"Threads:" << sol.GetUsedThreadCount();
-    //    qDebug()<< sol.GetRealIterationCount();
-        qDebug()<< "HR:" << sol.GetHardRating();
-        qDebug()<< "SF:" << sol.GetSoftRating();
 
-//    if (sol.IsParetoUsed())
-//        qDebug() << "Pareto optimal projects:" << sol.GetParetoOptimalProjectNames();
+    qDebug()<< "HR:" << sol.GetHardRating();
+    qDebug()<< "SF:" << sol.GetSoftRating();
 
-//    json_test();
 
     return 0;
 }
